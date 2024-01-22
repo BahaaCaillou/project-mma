@@ -1,0 +1,1329 @@
+@font-face {
+  font-family: 'Bebas Neue';
+  src: url('/public/fonts/BebasNeue-Regular.ttf') format('truetype');
+}
+.logo {
+    text-align: center;
+}
+
+body {
+  background-color: rgb(27, 27, 27);
+}
+
+
+header {
+   background-color: #000000   ;
+}
+
+.logo img {
+    width: 15rem; /* Réduire la taille du logo */
+    height: 15rem;
+    padding: 1rem;
+}
+
+
+/* Styles pour la barre de navigation */
+.navbar {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    background-color: #000000;
+    padding: 1rem 0;
+    color: #fff;
+    margin-bottom: 2rem;
+    border-bottom: 0.2rem solid #7B68EE; 
+
+}
+
+/* Styles pour les liens de la navbar */
+.navbar a {
+    text-decoration: none;
+    color: #fff;
+    font-weight: bold;
+    transition: color 0.3s;
+    margin: 0 1rem;
+    position: relative;
+    font-family: 'Bebas Neue', sans-serif;
+    font-size: 1.2rem;
+    font-weight: lighter;
+}
+
+/* Styles pour les liens au survol */
+
+.navbar a:hover {
+    color: #7B68EE;
+    transform: scale(1.1);
+    transition: transform 0.3s;
+}
+
+
+
+/* Styles pour le lien "Équipements et Guides" */
+.navbar .dropdown {
+    position: relative;
+}
+
+/* Styles pour le menu déroulant */
+.navbar .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #000000;
+    border-bottom: 0.2rem solid #7B68EE; 
+    min-width: 10rem; /* Utilisation de rem pour une taille responsive */
+    z-index: 1;
+    box-shadow: 0 0.25rem 0.3rem rgba(0, 0, 0, 0.1); /* Utilisation de rem pour une taille responsive */
+    top: 100%;
+    left: 0;
+    transform: translateY(2rem); /* Utilisation de rem pour une taille responsive */
+}
+
+/* Styles pour les liens du menu déroulant */
+.navbar .dropdown-content a {
+    padding: 0.3rem;
+    text-align: left;
+    clear: both;
+    display: block;
+    color: #fff;
+    transition: color 0.3s;
+    padding: 1rem;
+    margin-top: 1rem;
+}
+
+/* Styles pour les liens du menu déroulant au survol */
+.navbar .dropdown:hover .dropdown-content {
+    display: block; /* Affichez-le lorsque vous survolez "Équipements et Guides" */
+    transform: translateY(0);
+}
+
+/* Styles pour les liens du menu déroulant au survol */
+.navbar .dropdown-content a:hover {
+    color: #7B68EE;
+}
+
+/* Styles pour la version mobile (ajuster les valeurs en fonction de vos besoins) */
+@media (max-width: 768px) {
+    .navbar {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .navbar a {
+        margin: 1rem 0;
+        transition: color 0.3s;
+        font-size: 2rem;
+    }
+}
+
+
+.home-container {
+    text-align: center;
+   
+   
+}
+
+
+
+.news {
+    display: flex;
+    flex-wrap: wrap; /* Permet aux sections de passer à la ligne sur les petits écrans */
+    justify-content: space-between;
+}
+
+.section {
+    flex: 1;
+    width: 30%; /* Ajustez la largeur maximale à 40% */
+    margin: 0 auto; /* Centrez l'élément */
+    text-align: center;
+    border-radius: 0.3rem;
+    padding: 2rem;
+    margin-bottom: 2rem;
+
+}
+
+
+
+
+.section p{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    border-radius: 0.3rem;
+     padding: 1rem;
+    margin-bottom: 1rem;
+
+}
+
+
+.article {
+    transition: transform 0.3s;
+    background-color: #ddd;
+    /* padding-bottom: 2rem; */
+    
+}
+
+.article p {
+    font-family: 'Bebas Neue', sans-serif; 
+    font-weight: lighter;
+}
+
+.article h3 {
+    font-family: 'Bebas Neue', sans-serif; 
+    font-weight: lighter;
+    text-align: center;
+   
+}
+
+.article:hover {
+    transform: scale(1.05);
+}
+
+/******/
+
+.article-id {
+  background-color: #ddd;
+  padding: 1.25rem;
+  margin-bottom: 1.25rem;
+  border-radius: 0.3125rem;
+  box-shadow: 0px 0px 0.625rem 0px rgba(0,0,0,0.1);
+}
+
+.article-id h3 {
+  margin-bottom: 1rem;
+  color: #000000;
+  font-size: 3rem;
+  margin: 1.25rem;
+  padding: 1.25rem;
+}
+
+.article-id img {
+  display: block;
+  width: 70%;
+  height: 70%;
+  margin: auto;
+  border-radius: 0.3125rem;
+  margin-bottom: 1rem;
+}
+
+.article-id p {
+  margin-bottom: 1rem;
+  line-height: 1.5;
+  font-size: 1.5rem;
+}
+
+.article-id a {
+  color: #007BFF;
+  text-decoration: none;
+}
+
+
+
+/* .section:last-child {
+    margin-right: 0;
+} */
+
+/* Style pour le titre "Quoi de neuf" */
+h1 {
+    margin: 2rem;
+    font-size: 3rem;
+    margin-bottom: 2rem;
+    background-color: #000000;
+    padding: 1rem 0;
+    color: #fff;
+    border-radius: 0.3rem;
+    border: 0.2rem solid #7B68EE;
+    font-family: 'Bebas Neue', sans-serif;
+    
+    font-weight: lighter;}
+
+    @media only screen and (max-width: 768px) {
+        h1 {
+            font-size: 2rem;
+            display: flex; 
+            flex-direction: column;
+        }
+
+      
+      }
+
+
+      @media only screen and (max-width: 768px) {
+        h2 {
+            font-size: 1.5rem;
+            display: flex; 
+            flex-direction: column;
+        }
+      }
+    
+
+      
+/* Footer.css */
+.footer {
+    background-color: #000000;
+    color: #fff;
+    padding: 2rem 0;
+    text-align: center;
+    border-top: 0.2rem solid #7B68EE;
+}
+
+.footer-content {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap; /* Gérer le passage à la ligne des éléments du footer */
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 2rem;
+}
+
+.footer-logo img {
+    width: 4rem;
+    height: 4rem;
+    margin-bottom: 1rem;
+}
+
+.footer-logo h1 {
+    font-size: 1.5rem;
+}
+
+.footer-links ul {
+    list-style: none;
+    padding: 0;
+}
+
+.footer-links li {
+    display: inline-block;
+    margin-right: 1rem;
+}
+
+.footer-links a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 1rem;
+}
+
+.footer-social {
+    margin-top: 2rem;
+}
+
+.footer-social h3 {
+    font-size: 1.125rem;
+    margin-bottom: 1rem;
+}
+
+h2 {
+    font-size: 1.5rem;
+    margin-bottom: 2rem;
+    background-color: #333;
+    padding: 1rem 0;
+    color: #fff;
+    border-radius: 0.3rem;
+    background-color: #000000;
+    border: 0.2rem solid #7B68EE;
+    font-family: 'Bebas Neue', sans-serif;
+    
+    font-weight: lighter;
+}
+
+/* Styles pour les articles */
+.article {
+    border: 0.1rem solid #000000;
+    /* padding: 1.5rem; */
+    border-radius: 1rem;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    
+    
+    
+}
+
+.article img {
+    max-width: auto; /* Ajuster la largeur de l'image pour qu'elle soit adaptative */
+    height: 30vh;
+
+}
+
+/* Styles pour le bouton de navigation actif */
+.nav-button-active {
+    background-color: #B22222; /* Couleur de fond différente pour le bouton actif, par exemple, rouge foncé */
+    color: #fff; /* Couleur de texte pour le bouton actif */
+    border: none; /* Supprimer la bordure du bouton actif */
+    border-radius: 0.4rem; /* Ajouter des coins arrondis au bouton */
+    padding: 1rem 2rem; /* Espacement interne pour le bouton actif */
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 1.6rem;
+    margin: 0.4rem 0.2rem;
+    cursor: pointer;
+    /* Autres styles spécifiques au bouton actif, si nécessaire */
+  }
+  
+  /* Styles pour les boutons de navigation inactifs */
+  .nav-button {
+    /* background-color: #B22222; Couleur de fond par défaut pour les boutons inactifs */
+    color: #fff; /* Couleur de texte pour les boutons inactifs */
+    border: none; /* Supprimer la bordure des boutons inactifs */
+    border-radius: 0.4rem; /* Ajouter des coins arrondis aux boutons */
+    padding: 0.1rem 1rem; /* Espacement interne pour les boutons inactifs */
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 1rem;
+    margin: 0.4rem 0.2rem;
+    cursor: pointer;
+    
+    /* Autres styles spécifiques aux boutons inactifs, si nécessaire */
+  }
+
+/* Styles pour le bouton "Upvote" */
+
+  
+  /* Animation de flamme */
+  @keyframes flame {
+    0% {
+      opacity: 0.7;
+    }
+    50% {
+      opacity: 1;
+      transform: translateY(-0.3125rem); /* Ajustez le déplacement en REM */
+    }
+    100% {
+      opacity: 0.7;
+    }
+  }
+
+  /* Ajoutez ces styles CSS dans votre feuille de style CSS */
+/* Style pour le menu déroulant */
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+/* Style pour le lien principal du menu déroulant */
+.dropdown > span {
+    cursor: pointer;
+}
+
+/* Style pour le menu déroulant caché par défaut */
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 2;
+}
+
+/* Style pour les liens du menu déroulant */
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+/* Affichez le menu déroulant lorsque l'utilisateur survole le lien principal */
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+.comment-container {
+  width: 80%; /* Ajustez la largeur selon vos besoins */
+  margin: 0 auto; /* Centrer horizontalement */
+}
+
+.comment {
+  border: #000000 solid 0.1rem;
+  padding: 1.25rem;
+  border-radius: 0.5rem;
+  margin: 1.25rem auto; /* Ajoutez 'auto' pour centrer horizontalement */ 
+  background-color: #ffffff;
+}
+.error-message {
+  color: red;
+  margin-top: 0.5rem;
+}
+.comment-section {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 1.25rem;
+  background-color: #ddd;
+  margin: 1.25rem auto; /* Ajoutez 'auto' pour centrer horizontalement */
+  width: 50%; /* Ajustez la largeur selon vos besoins */
+  border-radius: 0.5rem;
+}
+
+.comment-textarea {
+  width: 100%;
+  padding: 0.9375rem;
+  border: 0.0625rem solid #ddd;
+  border-radius: 0.3125rem;
+  font-size: 1rem;
+  margin-bottom: 1.25rem;
+  box-sizing: border-box;
+  transition: all 0.3s ease;
+}
+
+.comment-textarea:focus {
+  border-color: #007BFF;
+  box-shadow: 0px 0px 0.625rem 0px rgba(0,0,0,0.1);
+}
+
+.comment-button {
+  display: block;
+  width: 100%;
+  padding: 0.9375rem;
+  border: none;
+  background-color: #007BFF;
+  color: #fff;
+  border-radius: 0.3125rem;
+  cursor: pointer;
+  font-size: 1.125rem;
+  font-weight: bold;
+  transition: all 0.3s ease;
+  box-shadow: 0px 0px 0.625rem 0px rgba(0,0,0,0.1);
+  margin-bottom: 1.25rem;
+}
+
+.comment-button:hover {
+  background-color: #0056b3;
+  transform: scale(1.05);
+  box-shadow: 0px 0.3125rem 0.9375rem 0px rgba(0,0,0,0.2);
+}
+
+
+/* Styles pour le conteneur principal */
+.admin-container {
+    width: 60rem;
+    margin: auto;
+    padding: 2rem;
+    background-color: #f9f9f9;
+    border: 0.1rem solid #ddd;
+    
+  }
+  
+  /* Styles pour le conteneur de formulaire */
+  .form-container {
+    margin-bottom: 2rem;
+
+  }
+  
+  /* Styles pour les champs de saisie */
+  .form-container input {
+    display: block;
+    width: 90%;
+    margin-bottom: 1rem;
+    padding: 1rem;
+    font-size: 1rem;
+   
+  }
+  
+  /* Styles pour les boutons */
+  .form-container button,
+  .edit-button,
+  .delete-button {
+    display: block;
+    width: 100%;
+    padding: 1rem;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    font-size: 1rem;
+    cursor: pointer;
+  }
+  
+
+ 
+  .article-container {
+  
+    text-align: center;
+    margin-left: 10%;
+    margin-right: 10%;
+  }
+  /* Styles pour les titres d'articles */
+  .article-container h4 {
+    font-size: 1.8rem;
+    margin-bottom: 0.3rem;
+  }
+  
+  /* Styles pour les paragraphes d'articles */
+  .article-container p {
+    font-size: 1.3rem;
+    margin-bottom: 0.3rem;
+  }
+  
+  /* Styles pour les images d'articles */
+  .article-container img {
+    max-width: 60%;
+    height: auto;
+    margin-bottom: 1rem;
+  } 
+  
+  /* Styles pour les boutons d'édition et de suppression */
+  .edit-button,
+  .delete-button {
+    padding: 0.8rem 1.2rem;
+    background-color: #f44336;
+    color: white;
+    border: none;
+    font-size: 1rem;
+    cursor: pointer;
+    margin-right: 1rem;
+  }
+  
+  /* Style spécifique pour le bouton d'édition */
+  .edit-button {
+    background-color: #2196F3;
+  }
+
+  /*teeessssst*/
+
+  .image-container {
+    position: relative;
+    width: 100%;
+}
+
+.image-container img {
+    width: 100%;
+    height: auto;
+    border-radius: 1rem;
+    /* display: block; */
+}
+
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgba(0, 0, 0, 0.5); /* Utilisation de rgba pour la transparence */
+    color: #fff; /* Couleur du texte */
+    border-radius: 1rem;
+}
+
+
+.overlay h3 {
+    font-size: 1.5rem; /* Taille de la police en unités de vue */
+    text-align: center;
+    padding: 1rem;
+    width: 100%; /* Ajustez la largeur du conteneur de texte */
+    max-width: 800px; /* Définissez une largeur maximale pour le titre */
+}
+
+@media only screen and (max-width: 768px) {
+    .overlay h3 {
+        font-size: 1.0rem; /* Taille de la police en unités de vue */
+    
+    }
+
+  }
+
+.admin-navbar {
+    display: flex;
+    flex-direction: column;
+    padding: 1rem 0;
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+    margin: 1rem 0;
+    padding: 1rem;
+    transition: color 0.3s;
+    font-family: 'Bebas Neue', sans-serif;
+    font-size: 1.2rem;
+    font-weight: lighter;
+}
+
+.admin-navbar:hover {   
+   
+    color: #7B68EE;
+}
+
+textarea {
+    display: block;
+    width: 100%;
+    height: 8rem; /* Hauteur fixe de la zone de texte */
+    margin-bottom: 1rem;
+    padding: 1rem;
+    font-size: 1rem;
+    resize: none; /* Empêche le redimensionnement de la zone de texte par l'utilisateur */
+  }
+
+  
+  .image-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+    height: 100%;
+  }
+  
+  .article-image {
+    display: block;
+    max-width: 100%;
+    height: auto;
+    width: 100%; /* Pour assurer la responsivité */
+    max-height: 20rem; /* Ajustez la hauteur maximale souhaitée pour les images */
+  }
+
+  
+  
+  .image-news {
+    border-radius: 1rem;
+  }
+  
+  .news-container {
+    text-align: center;
+    padding-left: 30rem;
+    padding-right: 30rem;
+  }
+  
+  .article-title {
+    font-size: 3rem; /* Taille de police de caractères pour les grands écrans */
+  }
+  
+  @media only screen and (max-width: 768px) {
+    .article-title {
+      font-size: 2.5rem; /* Taille de police de caractères pour les écrans de taille moyenne */
+    }
+  }
+  
+  
+  
+  
+  
+  .open-trivia-container {
+    background-color: #383838;
+    border-radius: 8px;
+  }
+  
+  .quiz-container {
+    
+    padding: 2rem;
+    /* border: 1px solid #ccc; */
+    border-radius: 8px;
+    margin-right: 2rem;
+  }
+  
+  .scoreboard-container {
+    
+    padding: 2rem;
+    /* border: 1px solid #ccc; */
+    border-radius: 8px;
+  }
+  
+  .scoreboard {
+    list-style: none;
+    padding: 0;
+    
+  }
+  
+  .scoreboard li {
+    margin-bottom: 0.5rem;
+    font-family: 'Bebas Neue', sans-serif;
+    font-size: 1.5rem;
+    color: #ccc;
+  }
+  
+  .open-trivia-input {
+    width: 50%;
+    padding: 0.5rem;
+    font-size: 1rem;
+    margin : 1rem;
+    
+  }
+  
+  .open-trivia-button1 {
+    padding: 0.8rem 1.2rem;
+    background-color: #4caf50;
+    color: white;
+    border: none;
+    font-size: 1rem;
+    cursor: pointer;
+    margin-right: 1rem;
+    margin-bottom: 1rem;
+  }
+  
+  .open-trivia-button1:hover {
+    background-color: #45a049;
+  }
+  
+  .open-trivia-button2 {
+    padding: 0.8rem 1.2rem;
+    background-color: #c51818;
+    color: white;
+    border: none;
+    font-size: 1rem;
+    cursor: pointer;
+    margin-right: 1rem;
+    margin-bottom: 1rem;
+  }
+  
+  .open-trivia-button2:hover {
+    background-color: #950000;
+  }
+  
+  .quizz-container p {
+    font-size: 1.5rem;
+    color: white;
+    font-family: 'Bebas Neue', sans-serif;
+    font-size: 1.5rem;
+  }
+  
+  .quizz-container h2 {
+    width: 50%;
+    margin-left: 25%;
+    margin-bottom: 0
+  }
+  
+  .loader {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    font-size: 2em;
+    animation: blink 1s linear infinite;
+    color: #fff;
+  }
+  
+  @keyframes blink {
+    0% { opacity: 0; }
+    50% { opacity: 1; }
+    100% { opacity: 0; }
+  }
+  
+  /*page login*/
+  
+  .login-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.login-form {
+  background-color: #fff;
+  border-radius: 0.625rem;
+  box-shadow: 0 0 0.625rem 0 rgba(0,0,0,0.1);
+  padding: 1.875rem;
+  width: 100%;
+  max-width: 25rem;
+}
+
+.login-form input[type="text"],
+.login-form input[type="password"],
+.login-form input[type="email"] {
+  width: 100%;
+  padding: 0.9375rem;
+  border: 0.0625rem solid #ddd;
+  border-radius: 0.3125rem;
+  font-size: 1rem;
+  margin-bottom: 1.25rem;
+  margin-top: 1.25rem;
+  box-sizing: border-box;
+}
+
+.login-form button{
+  display: block;
+  width: 100%;
+  padding: 0.9375rem;
+  border: none;
+  background-color: #7B68EE;
+  color: #fff;
+  border-radius: 0.3125rem;
+  cursor: pointer;
+  font-size: 1.125rem;
+  font-weight: bold;
+  transition: all 0.3s ease;
+  box-shadow: 0 0 0.625rem 0 rgba(0,0,0,0.1);
+}
+
+.login-form button:hover {
+  background-color: #5c4db0;
+  transform: scale(1.05);
+  box-shadow: 0 0.3125rem 0.9375rem 0 rgba(0,0,0,0.2);
+}
+
+.register-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.register-form {
+  background-color: #fff;
+  border-radius: 0.625rem;
+  box-shadow: 0 0 0.625rem 0 rgba(0,0,0,0.1);
+  padding: 1.875rem;
+  width: 100%;
+  max-width: 25rem;
+}
+
+.register-form input[type="text"],
+.register-form input[type="password"],
+.register-form input[type="email"]{
+  width: 100%;
+  padding: 0.9375rem;
+  border: 0.0625rem solid #ddd;
+  border-radius: 0.3125rem;
+  font-size: 1rem;
+  margin-top: 1.25rem;
+  margin-bottom: 1.25rem;
+  box-sizing: border-box;
+}
+
+.register-form button{
+  display: block;
+  width: 100%;
+  padding: 0.9375rem;
+  border: none;
+  background-color: #7B68EE;
+  color: #fff;
+  border-radius: 0.3125rem;
+  cursor: pointer;
+  font-size: 1.125rem;
+  font-weight: bold;
+  transition: all 0.3s ease;
+  box-shadow: 0 0 0.625rem 0 rgba(0,0,0,0.1);
+}
+
+.register-form button:hover {
+  background-color: #5c4db0;
+  transform: scale(1.05);
+  box-shadow: 0 0.3125rem 0.9375rem 0 rgba(0,0,0,0.2);
+}
+  
+  .gif {
+    display: block;
+    width: 50%; /* Ajustez la largeur selon vos besoins */
+    height: auto;
+    /* margin: auto; */
+    padding: 2rem;
+    border-radius: 1rem;
+    width: 50%;
+    height: auto;
+    
+  }
+  
+  .not-access-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    
+  }
+  
+  
+  
+  .not-access-link {
+    margin-top: 1.25rem; /* 20px / 16 = 1.25rem */
+  font-size: 1.5rem;
+  color: #b7b7b7;
+  text-decoration: none;
+  padding: 3rem;
+  }
+  
+  .upvote-button, .downvote-button {
+    padding: 0.625rem 1.25rem; /* 10px / 16 = 0.625rem, 20px / 16 = 1.25rem */
+  margin: 0.625rem; /* 10px / 16 = 0.625rem */
+  border: none;
+  border-radius: 0.3125rem; /* 5px / 16 = 0.3125rem */
+  color: white;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  }
+  
+  .vote-button {
+    padding: 0.5rem 1rem;
+    margin: 0.5rem;
+    border: none;
+    background: none;
+    color: #ffffff;
+    cursor: pointer;
+    transition: color 0.3s ease;
+  }
+  
+  .upvote-button {
+    background-color: green;
+  }
+
+  @keyframes changeColor {
+    0% {
+      background-color: green;
+    }
+    50% {
+      background-color: darkgreen;
+    }
+    100% {
+      background-color: green;
+    }
+  }
+  
+  .upvote-button:hover {
+    background-color: darkgreen;
+  }
+  
+  .downvote-button {
+    background-color: red;
+  }
+  
+  @keyframes changeColor {
+    0% {
+      background-color: red;
+    }
+    50% {
+      background-color: darkred;
+    }
+    100% {
+      background-color: red;
+    }
+  }
+
+  .downvote-button:hover {
+    background-color: darkred;
+  }
+  
+  .button-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 5rem;
+    
+  }
+    .news-button {
+     
+  width: 50%;
+  text-decoration: none;
+  margin: 1rem;
+  padding: 1rem;
+  background-color: #7B68EE;
+  color: white;
+  border: none;
+  font-size: 1rem;
+  cursor: pointer;
+  border-radius: 1rem;
+  font-family: 'Bebas Neue', sans-serif;
+  font-size: 1.2rem;
+  text-align: center;
+  margin-bottom: -1.5rem;
+    }
+
+    @media (max-width: 768px) {
+      
+      p {
+        font-size: 1.5rem;
+      
+      }
+      
+      .news-button-id a {
+        font-size: 1.5rem;
+      }
+
+      
+    
+      
+      .overlay h3 {
+        font-size: 2rem;
+      }
+      
+      
+      .upvote-button, .downvote-button {
+        margin: 1.5rem; /* Reduce padding for smaller screens */
+        font-size: 1.5rem;
+         /* Reduce margin for smaller screens */
+      }
+    
+      .vote-button {
+        padding: 0.25rem 0.5rem; /* Reduce padding for smaller screens */
+        margin: 0.25rem; /* Reduce margin for smaller screens */
+      }
+    
+      .button-container {
+        gap: 2.5rem; 
+        padding: 1.5rem; /* Reduce gap for smaller screens */
+      }
+    
+      .news-button {
+        width: 100%; /* Make the button take up the full width on smaller screens */
+        margin: 1rem; /* Reduce margin for smaller screens */
+        padding: 0.5rem; /* Reduce padding for smaller screens */
+        font-size: 2rem; /* Reduce font size for smaller screens */
+        margin-bottom: -5rem; /* Adjust margin-bottom for smaller screens */
+      }
+      
+      .section {
+        width:100%;
+        padding: 0rem;
+        
+        
+      }
+      
+      .section p {
+        margin-bottom: -1.5rem ;
+      }
+      .home-container {
+        padding: 1rem;
+      }
+      
+      .admin-container {
+        width: 100%;
+        padding: 0rem;
+        margin: 0rem;
+      }
+      
+      
+    }
+
+    .user-table {
+      width: 100%;
+      border-collapse: collapse;
+      margin-top: 1.25rem;
+    }
+    
+    .user-table-header {
+      background-color: #f8f9fa;
+      font-weight: bold;
+    }
+    
+    .user-table-header, .user-table-row td {
+      padding: 0.625rem;
+      border: 0.0625rem solid #dee2e6;
+      text-align: left;
+    }
+    
+    .user-table-row {
+      transition: background-color 0.3s ease;
+    }
+    
+    .user-table-row:nth-child(even) {
+      background-color: #f2f2f2;
+    }
+    
+    .user-table-row:hover {
+      background-color: #e8e8e8;
+    }
+    
+    .user-role-select {
+      
+      padding: 0.3125rem;
+      border-radius: 0.3125rem;
+      border: 0.0625rem solid #ced4da;
+      transition: border-color 0.3s ease;
+    }
+    
+    .user-role-select:hover {
+      border-color: #999;
+    }
+
+    .user-table-container {
+      
+      margin: 2rem;
+      padding: 1rem;
+      background-color: #fff;
+      box-shadow: 0 0.125rem 0.25rem rgba(0,0,0,0.1);
+    }
+
+    .article-card-admin {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      border: 0.0625rem solid #ccc;
+      margin-bottom: 1rem;
+      padding: 1rem;
+      border-radius: 0.3125rem;
+    }
+    
+    .article-title-admin {
+      font-size: 1.5rem;
+      margin-bottom: 0.5rem;
+    }
+    
+    .article-description-admin {
+      font-size: 1rem;
+      margin-bottom: 0.5rem;
+    }
+    
+    .article-category-admin {
+      font-size: 0.9rem;
+      margin-bottom: 0.5rem;
+      color: #666;
+    }
+    
+    .article-image-container-admin {
+      width: 100%;
+      height: auto;
+    }
+    
+    .article-image-admin {
+      max-width: 100%;
+      height: auto;
+    }
+    
+    .edit-button-admin, .delete-button-admin {
+      margin-top: 1rem;
+      padding: 0.5rem 1rem;
+      border: none;
+      border-radius: 0.3125rem;
+      cursor: pointer;
+    }
+    
+    .edit-button-admin {
+      background-color: #4caf50;
+      color: white;
+    }
+    
+    .delete-button-admin {
+      background-color: #f44336;
+      color: white;
+    }
+
+    @media screen and (max-width: 768px) {
+      .article-card-admin {
+        padding: 0.5rem;
+      }
+    
+      .article-title-admin {
+        font-size: 1.25rem;
+        margin-bottom: 0.25rem;
+      }
+    
+      .article-description-admin {
+        font-size: 0.875rem;
+        margin-bottom: 0.25rem;
+      }
+    
+      .article-category-admin {
+        font-size: 0.75rem;
+        margin-bottom: 0.25rem;
+      }
+    
+      .edit-button-admin, .delete-button-admin {
+        margin-top: 0.5rem;
+        padding: 0.25rem 0.5rem;
+      }
+    }
+
+    .form-container-admin input {
+      width: 100%;
+      padding: 0.5rem;
+      margin-top:0.5rem;
+      margin-bottom: 0.5rem;
+      border: 0.0625rem solid #ccc;
+      border-radius: 0.3125rem;
+    }
+    
+    .form-container-admin button {
+      width: 100%;
+      padding: 0.5rem;
+      border: none;
+      border-radius: 0.3125rem;
+      background-color: #4caf50;
+      color: white;
+      cursor: pointer;
+      margin: 2rem;
+    }
+    
+    .form-container-admin button:hover {
+      background-color: #45a049;
+    }
+
+    @media screen and (max-width: 768px) {
+      .form-container-admin input {
+        padding: 0.25rem;
+        margin-bottom: 0.25rem;
+      }
+    
+      .form-container-admin button {
+        padding: 0.25rem;
+      }
+    }
+    .form-container-admin {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+    }
+
+  
+    
+    .news-button-id {
+  /* le reste de votre CSS */
+  text-align: center;
+  font-size: 3rem;
+  display: block;
+  margin: auto;
+}
+
+ .social-links {
+      display: flex;
+      justify-content: center;
+      gap: 1.2rem;
+    }
+    
+    .social-links a {
+     /* Ajoutez un filtre de niveau de gris à toutes les images */
+      transition: color 0.3s ease;
+      filter: grayscale(100%);
+    }
+    
+    .social-links a:hover {
+      opacity: 0.7;
+
+    }
+
+    .facebook {
+      color: #3b5998; /* Couleur officielle de Facebook */
+    }
+    
+    .twitter {
+      color: #1da1f2; /* Couleur officielle de Twitter */
+    }
+    
+    .instagram {
+      color: #e1306c; /* Couleur officielle d'Instagram */
+    }
+    
+    .social-links a:hover {
+      opacity: 0.7;
+      filter: grayscale(0%); /* Réduire l'opacité au survol */
+    }
+    
+    .navbar-footer {
+      display: flex;
+      justify-content: space-evenly;
+      align-items: center;
+      background-color: #000000;
+      padding: 1rem 0;
+      color: #fff;
+      margin-bottom: 2rem;
+    
+  
+  }
+  
+  /* Styles pour les liens de la navbar */
+  .navbar-footer a {
+      text-decoration: none;
+      color: #fff;
+      font-weight: bold;
+      transition: color 0.3s;
+      margin: 0 1rem;
+      position: relative;
+      font-family: 'Bebas Neue', sans-serif;
+      font-size: 1.2rem;
+      font-weight: lighter;
+  }
+  
+  /* Styles pour les liens au survol */
+  
+  .navbar-footer a:hover {
+      color: #7B68EE;
+      transform: scale(1.1);
+      transition: transform 0.3s;
+  }
+  
