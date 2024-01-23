@@ -16,7 +16,7 @@ const Footer = () => {
         </nav>
         <div className="logo">
         <NavLink to={"/"} aria-label="accueil">
-            <img style={{ width: "10rem", height: "auto" }} src="http://bahaaedinetohamibakhit.ide.3wa.io:3000/img/logo4.png" alt="logo" />
+            <img style={{ width: "10rem", height: "auto" }} src="img/logo4.png" alt="logo" />
             </NavLink>
         </div>
         <p>Suivez-nous sur les réseaux sociaux </p>

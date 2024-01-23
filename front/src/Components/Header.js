@@ -35,7 +35,7 @@ const Header = () => {
             <header>
                 <div className="logo">
                 <NavLink to={"/"} aria-label="accueil">
-                    <img className="logo" src="http://bahaaedinetohamibakhit.ide.3wa.io:3000/img/logo4.png" alt="Logo de votre site" />
+                    <img className="logo" src="img/logo4.png" alt="Logo de votre site" />
                 </NavLink>
                 </div>
             <nav className="navbar" aria-label="navigation" role="navigation">

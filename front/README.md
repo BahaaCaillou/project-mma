@@ -1,3 +1,7 @@
+# project-mma
+My first project, a website for MMA fans
+
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
