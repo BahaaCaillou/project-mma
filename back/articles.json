@@ -1,0 +1,73 @@
+[
+    {
+        "title": "Jon Jones vs. Stipe Miocic : Le combat tant attendu est enfin confirmé !",
+        "description": "Après des années de spéculations, le combat tant attendu entre Jon Jones et Stipe Miocic est enfin confirmé ! Les deux champions poids lourds s'affronteront le 2 décembre prochain à l'UFC 283.",
+        "category": "MMA",
+        "date": "2023-10-11",
+        "comments": [
+            {
+                "pseudo": "John Doe",
+                "comment": "Je suis impatient de voir ce combat ! Ce sont deux des meilleurs combattants du monde, et je suis sûr que ce sera un spectacle.",
+                "date": "2023-10-11"
+            },
+            {
+                "pseudo": "Jane Doe",
+                "comment": "Je pense que Jon Jones va gagner. Il est trop rapide et trop technique pour Stipe Miocic.",
+                "date": "2023-10-11"
+            }
+        ],
+        "images": [
+            {
+                "src": "https://example.com/jon-jones-stipe-miocic.jpg",
+                "alt": "Jon Jones et Stipe Miocic"
+            }
+        ]
+    },
+    {
+        "title": "Conor McGregor annonce son retour à l'UFC !",
+        "description": "Conor McGregor a annoncé son retour à l'UFC sur les réseaux sociaux. L'Irlandais, qui n'a pas combattu depuis l'UFC 264 en juillet 2021, a déclaré qu'il était prêt à revenir dans l'octogone et à reconquérir le titre poids léger.",
+        "category": "MMA",
+        "date": "2023-10-10",
+        "comments": [
+            {
+                "pseudo": "John Doe",
+                "comment": "Je suis tellement excité ! Conor McGregor est l'un des combattants les plus excitants à regarder.",
+                "date": "2023-10-10"
+            },
+            {
+                "pseudo": "Jane Doe",
+                "comment": "Je ne sais pas s'il a encore le niveau pour concourir au plus haut niveau, mais je suis sûr que son retour sera un événement.",
+                "date": "2023-10-10"
+            }
+        ],
+        "images": [
+            {
+                "src": "https://example.com/conor-mcgregor-ufc-return.jpg",
+                "alt": "Conor McGregor annonce son retour à l'UFC"
+            }
+        ]
+    },
+    {
+        "title": "Francis Ngannou prolonge son contrat avec l'UFC !",
+        "description": "Francis Ngannou a prolongé son contrat avec l'UFC pour plusieurs années. Le champion poids lourd, qui a remporté le titre en mars 2021, a déclaré qu'il était heureux de rester dans l'organisation et qu'il était impatient de défendre son titre contre les meilleurs combattants du monde.",
+        "category": "MMA",
+        "date": "2023-10-09",
+        "comments": [
+            {
+                "pseudo": "John Doe",
+                "comment": "C'est une bonne nouvelle pour les fans de MMA ! Francis Ngannou est l'un des combattants les plus excitants à regarder.",
+                "date": "2023-10-09"
+            },
+            {
+                "pseudo": "Jane Doe",
+                "comment": "Je suis curieux de voir qui sera son prochain adversaire. Il y a beaucoup de bons combattants dans la division poids lourd.",
+                "date": "2023-10-09"
+            }
+        ],
+        "images": [
+            {
+                "src": "https://example.com/francis-ngannou-ufc-contract-extension.jpg",
+                "alt": "Francis Ngannou prolonge son contrat avec l'UFC"
+            }
+        ]
+    }]
